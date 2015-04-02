@@ -1,0 +1,189 @@
+
+
+    <nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MacBook</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">功能 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+                            <li role="presentation" class="disabled"><a href="#">业务功能</a></li>
+                            <li><a href="#Mac">MacBook</a></li>
+                            <li><a href="#Intel">Intel Core</a></li>
+                            <li><a href="#wifi">WIFI</a></li>
+                            <li class="divider"></li>
+                            <li role="presentation" class="disabled"><a href="#">系统功能</a></li>
+                            <li><a href="#">设置</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#help">帮助</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="用户名...">
+                        <input type="text" class="form-control" placeholder="密码...">
+                    </div>
+                    <button type="submit" class="btn btn-default">登录</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <%=  render partial: "share/carousel_img"%>
+
+                <div class="carousel-caption">
+                    <p>11 英寸 MacBook Air 充电一次可运行长达 9 小时，而 13 英寸机型则可运行长达 12 小时。</p>
+                    <p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://images.apple.com/cn/macbook-air/images/overview_processor_hero.jpg" alt="...">
+
+                <div class="carousel-caption">
+                    <p>无论是什么任务，配备 Intel HD Graphics 5000 图形处理器的第四代 Intel Core 处理器都能应对自如。</p>
+                    <p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://images.apple.com/cn/macbook-air/images/overview_wireless_hero_enhanced.png" alt="...">
+
+                <div class="carousel-caption">
+                    <p>有了新一代 802.11ac 技术，MacBook  Air 令 Wi-Fi 速度超越极限。</p>
+                    <p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container"  id="summary-container">
+        <div class="row">
+         	<div class="col-md-4">
+           		<%=  render partial: "share/carousel_img"%>
+           		<h2>MacBook</h2>
+           		<p>11 英寸 MacBook Air 充电一次可运行长达 9 小时，而 13 英寸机型则可运行长达 12 小时。</p>
+           		<p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+         	</div>
+        	<div class="col-md-4">
+           		<img src="http://images.apple.com/cn/macbook-air/images/overview_processor_hero.jpg" alt="...">
+           		<h2>Intel Core</h2>
+           		<p>无论是什么任务，配备 Intel HD Graphics 5000 图形处理器的第四代 Intel Core 处理器都能应对自如。</p>
+           		<p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+         	</div>
+        	<div class="col-md-4">
+            		<img src="http://images.apple.com/cn/macbook-air/images/overview_wireless_hero_enhanced.png" alt="...">
+            		<h2>WIFI</h2>
+            		<p>MacBook  Air 有了新一代 802.11ac 技术，MacBook Air 令 Wi-Fi 速度超越极限，有效距离大大加强。</p>
+            		<p> <a class="btn btn-lg  btn-primary" href="http://www.baidu.com" role="button" target="_blank">点我哟</a></p>
+        	</div>
+    </div>
+<hr class ="divider">
+<div class="container">
+<ul class="nav nav-tabs" role="tablist" id="tab-list">
+  <li role="tab" class="active"><a href="#Mac" data-toggle="tab">MacBook</a></li>
+  <li role="tab"><a href="#Intel" data-toggle="tab">Intel Core</a></li>
+  <li role="tab"><a href="#wifi" data-toggle="tab">WIFI</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="Mac">
+        <div class="row feature">
+            <div class="col-md-7">
+               <%=  render partial: "share/carousel_img"%>
+            </div>
+            <div class="col-md-5">           
+                <h2 class="feature-heading">MacBook<small>Mac</small></h2>
+                <p>11 英寸 MacBook Air 充电一次可运行长达 9 小时，而 13 英寸机型则可运行长达 12 小时。</p>  
+            </div> 
+        </div>
+    </div>
+    <div class="tab-pane" id="Intel">
+        <div class="row feature">
+            <div class="col-md-5">           
+               <img src="http://images.apple.com/cn/macbook-air/images/overview_processor_hero.jpg" alt="...">  
+            </div> 
+            <div class="col-md-7">
+                <h2 class="feature-heading">Intel Core<small>Intel</small></h2>
+                <p>无论是什么任务，配备 Intel HD Graphics 5000 图形处理器的第四代 Intel Core 处理器都能应对自如。</p>  
+            </div>
+        </div>
+    </div>
+   <div class="tab-pane" id="wifi">
+        <div class="row feature">
+            <div class="col-md-7">
+                <img src="http://images.apple.com/cn/macbook-air/images/overview_wireless_hero_enhanced.png" alt="...">
+            </div>
+            <div class="col-md-5">
+                <h2 class="feature-heading">WIFI<small>wifi</small></h2>
+                <p>MacBook  Air 有了新一代 802.11ac 技术，MacBook Air 令 Wi-Fi 速度超越极限，有效距离大大加强。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <hr class="divider">
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+        <p>2015 石贤辉</p>
+    </footer>
+</div>
+
+<div class="modal fade" id="help">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">帮助</h4>
+      </div>
+      <div class="modal-body">
+        <p>我虽然弹出来了，但是也帮不了你&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">别点哦</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script >
+$(document).ready(function(){
+    $("#bs-example-navbar .dropdown-menu a").click(function(){
+        var href = $(this) .attr("href");
+        $("#tab-list a[href='"+href+"']").tab("show");
+    });
+});
+</script>
+
+
+
+
